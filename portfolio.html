@@ -1,602 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
-
-
-<!-- Mirrored from www.gramentheme.com/html/xpovio/ltr/portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Dec 2023 11:43:49 GMT -->
+<html lang="zxx">
 
 <head>
-   <!-- required meta -->
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- #favicon -->
-   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-   <!-- #title -->
-   <title>YellowBees - Digital Agency Creative</title>
-   <!-- #keywords -->
-   <meta name="keywords" content="creative, agency, portfolio">
-   <!-- #description -->
-   <meta name="description" content="YellowBees: Infinite Horizon">
-   <!-- ==== css dependencies start ==== -->
-   <!-- bootstrap five css -->
-   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-   <!-- glyphter css -->
-   <link rel="stylesheet" href="assets/vendor/glyyphter/css/xpovio.css">
-   <!-- font awesome six css -->
-   <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.css">
-   <!-- nice select css -->
-   <link rel="stylesheet" href="assets/vendor/nice-select/css/nice-select.css">
-   <!-- magnific popup css -->
-   <link rel="stylesheet" href="assets/vendor/magnific-popup/css/magnific-popup.css">
-   <!-- slick css -->
-   <link rel="stylesheet" href="assets/vendor/slick/css/slick.css">
-   <!-- ==== / css dependencies end ==== -->
-   <!-- main css -->
-   <link rel="stylesheet" href="assets/css/main.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="img/logo/favicon.png" type="image/x-icon">
+
+    <!-- bootstrap grid css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <!-- itsulu css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Voyeen.Inc</title>
 </head>
 
 <body>
-   <!-- Calendly badge widget begin -->
-   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
-   <script
-      type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/yellowbeesoffical/yellowbees', text: 'Chat with YellowBees', color: '#FFCB0A', textColor: '#000000', branding: undefined }); }</script>
-   <!-- Calendly badge widget end -->
-   <!--[if lte IE 9]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-      <![endif]-->
-   <div class="my-app">
-      <!-- ==== preloader start ==== -->
-      <div id="preloader">
-         <div id="loader"></div>
-      </div>
-      <!-- ==== / preloader end ==== -->
-      <!-- ==== mouse cursor drag start ==== -->
-      <div class="mouseCursor cursor-outer"></div>
-      <div class="mouseCursor cursor-inner">
-         <span>Drag</span>
-      </div>
-      <!-- ==== / mouse cursor drag end ==== -->
-      <!-- ==== header start ==== -->
-      <header class="header">
-         <div class="primary-navbar cmn-nav">
+    <!-- wrapper -->
+    <div class="mil-wrapper">
+        <!-- top bar -->
+        <div class="mil-top-position mil-fixed">
+            <div class="mil-top-panel">
+                <!-- mil-top-panel-transparent -->
+                <div class="container">
+                    <a href="index.html" class="mil-logo" style="width: 140px"></a>
+                    <div class="mil-navigation">
+                        <nav>
+                            <ul>
+                                <li class="mil-has-children"><a href="index.html">Home</a></li>
+                                <li class="mil-has-children"><a href="about.html">About</a></li>
+                                <li class="mil-has-children"><a href="service-1.html">Servie</a></li>
+                                <li class="mil-has-children"><a href="prices.html">Pricing</a></li>
+                                <li class="mil-has-children"><a href="team.html">Team</a></li>
+                                <li class="mil-has-children"><a href="blog.html">Blog</a></li>
+                                <li class="mil-has-children"><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <div class="mil-search-icon">
+                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5848 19.7029C20.3908 19.8999 20.1358 19.997 19.8808 19.997C19.6268 19.997 19.3718 19.8999 19.1778 19.7029L15.5118 16.2199C13.9778 17.2549 12.3798 17.997 9.92584 17.997C4.98484 17.997 0.964844 13.959 0.964844 8.99695C0.964844 4.34995 4.98484 0.199951 9.92584 0.199951C14.8668 0.199951 18.8858 4.34995 18.8858 8.99695C18.8858 11.118 18.1468 13.68 16.9188 14.608L20.5848 18.29C20.9738 18.681 20.9738 19.3129 20.5848 19.7029ZM9.92584 1.99695C6.82984 1.99695 2.95684 5.13695 2.95684 8.99695C2.95684 12.857 6.82984 15.998 9.92584 15.998C11.8398 15.998 13.5758 15.217 14.8368 13.957C14.8408 13.952 14.8418 13.945 14.8468 13.941C14.8518 13.936 14.8578 13.935 14.8628 13.93C16.1168 12.663 16.8948 10.92 16.8948 8.99695C16.8948 5.13695 13.7678 1.99695 9.92584 1.99695Z" />
+                                </svg>
+                            </div>
+                        </nav>
+
+                    </div>
+                    <!-- mobile menu button -->
+                    <div class="mil-menu-btn">
+                        <span></span>
+                    </div>
+                    <!-- mobile menu button end -->
+                </div>
+            </div>
+        </div>
+        <!-- top bar end -->
+
+        <!-- banner -->
+        <div class="mil-banner-sm mil-deep-bg">
+            <img src="img/deco/map.png" alt="background" class="mil-background-image">
+            <div class="mil-deco mil-deco-accent" style="top: 47%; right: 10%; transform: rotate(90deg)"></div>
+            <div class="mil-banner-content">
+                <div class="container mil-relative">
+                    <ul class="mil-breadcrumbs mil-mb-30">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Works</a></li>
+                    </ul>
+                    <h2 class="mil-uppercase">Case Studies</h2>
+                </div>
+            </div>
+        </div>
+        <!-- banner end -->
+
+        <!-- portfolio -->
+        <section class="mil-p-120-120">
             <div class="container">
-               <div class="row">
-                  <div class="col-12">
-                     <nav class="navbar p-0">
-                        <div class="navbar__logo">
-                           <a href="index.html" aria-label="go to home">
-                              <img src="assets/images/logo.png" alt="Image" width="50px">
-                           </a>
-                        </div>
-                        <div class="navbar__menu">
-                           <ul>
-                              <li class="navbar__item navbar__item--has-children nav-fade">
-                                 <a href="index.html" aria-label="dropdown menu" class="">Home</a>
-                              </li>
-                              <li class="navbar__item navbar__item--has-children nav-fade">
-                                 <a href="javascript:void(0)" aria-label="dropdown menu"
-                                    class="navbar__dropdown-label">About Us</a>
-                                 <ul class="navbar__sub-menu">
-                                    <li>
-                                       <a href="about-us.html">About Us</a>
-                                    </li>
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-xl-6 mil-mb-60">
 
-                                 </ul>
-                              </li>
-                              <li class="navbar__item navbar__item--has-children nav-fade">
-                                 <a href="our-services.html" aria-label="dropdown menu" class="">Services</a>
-                              </li>
-                              <li class="navbar__item navbar__item--has-children nav-fade">
-                                 <a href="our-teams.html" aria-label="dropdown menu" class="">Our Team</a>
-                              </li>
-                              <li class="navbar__item navbar__item--has-children nav-fade">
-                                 <a href="portfolio.html" aria-label="dropdown menu" class="">Portfolio</a>
-                              </li>
-                              <li class="navbar__item navbar__item--has-children nav-fade">
-                                 <a href="contact-us.html" aria-label="dropdown menu" class="">Contact</a>
-                              </li>
+                        <div class="mil-project-cover">
+                            <img src="img/projects/2.jpg" alt="Project">
+                        </div>
 
-                           </ul>
-                        </div>
-                        <div class="navbar__options">
-                           <div class="navbar__mobile-options d-none d-sm-flex">
-                              <a href="contact-us.html" class="btn btn--secondary">Let's Talk</a>
-                           </div>
-                           <button class="open-mobile-menu d-flex d-xl-none" aria-label="toggle mobile menu">
-                              <i class="fa-light fa-bars-staggered"></i>
-                           </button>
-                        </div>
-                     </nav>
-                  </div>
-               </div>
-            </div>
-            <!-- ==== mobile menu start ==== -->
-            <div class="mobile-menu">
-               <nav class="mobile-menu__wrapper">
-                  <div class="mobile-menu__header nav-fade">
-                     <div class="logo">
-                        <a href="index.html">
-                           <img src="assets/images/logo.png" alt="yellow bees logo" title="Logo" width="50px">
+                    </div>
+                    <div class="col-xl-5 mil-mb-60">
+
+                        <span class="mil-suptitle mil-suptitle-2 mil-mb-30">The majority have suffered alteration in some form.</span>
+                        <h3 class="mil-mb-30">Android App For Shaving Products Delivery</h3>
+                        <a href="project.html" class="mil-button-with-label">
+                            <div class="mil-button mil-border mil-icon-button"><span><i class="fas fa-plus"></i></span></div><span class="mil-dark">See More</span>
                         </a>
-                     </div>
-                     <a href="javascript:void(0)" aria-label="close mobile menu" class="close-mobile-menu">
-                        <i class="fa-light fa-xmark-large"></i>
-                     </a>
-                  </div>
-                  <div class="mobile-menu__list"></div>
-                  <div class="mobile-menu__options d-flex d-sm-none justify-content-center nav-fade"></div>
-                  <div class="mobile-menu__social social nav-fade">
-                     <a href="https://www.facebook.com/" target="_blank" aria-label="share us on facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                     </a>
-                     <a href="https://www.twitter.com/" target="_blank" aria-label="share us on twitter">
-                        <i class="fa-brands fa-twitter"></i>
-                     </a>
-                     <a href="https://www.pinterest.com/" target="_blank" aria-label="share us on pinterest">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                     </a>
-                     <a href="https://www.instagram.com/" target="_blank" aria-label="share us on instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                     </a>
-                  </div>
-               </nav>
+
+                    </div>
+                </div>
+                <div class="row flex-sm-row-reverse justify-content-between align-items-center">
+                    <div class="col-xl-6 mil-mb-60">
+
+                        <div class="mil-project-cover mil-type-2">
+                            <img src="img/projects/3.jpg" alt="Project">
+                        </div>
+
+                    </div>
+                    <div class="col-xl-5 mil-mb-60">
+
+                        <span class="mil-suptitle mil-suptitle-2 mil-mb-30">The majority have suffered alteration in some form.</span>
+                        <h3 class="mil-mb-30">Android App For Shaving Products Delivery</h3>
+                        <a href="project.html" class="mil-button-with-label">
+                            <div class="mil-button mil-border mil-icon-button"><span><i class="fas fa-plus"></i></span></div><span class="mil-dark">See More</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-xl-6 mil-mb-60">
+
+                        <div class="mil-project-cover">
+                            <img src="img/projects/1.jpg" alt="Project">
+                        </div>
+
+                    </div>
+                    <div class="col-xl-5 mil-mb-60">
+
+                        <span class="mil-suptitle mil-suptitle-2 mil-mb-30">The majority have suffered alteration in some form.</span>
+                        <h3 class="mil-mb-30">Android App For Shaving Products Delivery</h3>
+                        <a href="project.html" class="mil-button-with-label">
+                            <div class="mil-button mil-border mil-icon-button"><span><i class="fas fa-plus"></i></span></div><span class="mil-dark">See More</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="mil-divider mil-mb-60"></div>
+
+                <div class="mil-pagination mil-hidden-arrows">
+                    <div class="mil-slider-nav">
+                        <div class="mil-slider-btn-prev mil-blog-prev"><i class="fas fa-arrow-left"></i><span class="mil-h6">Prev</span></div>
+                    </div>
+                    <ul class="mil-pagination-numbers">
+                        <li class="mil-active"><a href="portfolio.html">1</a></li>
+                        <li><a href="portfolio.html">2</a></li>
+                        <li><a href="portfolio.html">3</a></li>
+                    </ul>
+                    <div class="mil-slider-nav">
+                        <div class="mil-slider-btn-next mil-blog-next"><span class="mil-h6">Next</span><i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </div>
             </div>
-            <div class="mobile-menu__backdrop"></div>
-            <!-- ==== / mobile menu end ==== -->
-         </div>
-      </header>
-      <!-- ==== / header end ==== -->
-      <div id="smooth-wrapper">
-         <div id="smooth-content">
-            <!-- ==== main start ==== -->
-            <main>
-               <!-- ==== banner start ==== -->
-               <section class="cmn-banner bg-img" data-background="assets/images/banner/cmn-banner-bg.png">
-                  <div class="container">
-                     <div class="row gaper align-items-center">
-                        <div class="col-12 col-lg-5 col-xl-7">
-                           <div class="text-center text-lg-start">
-                              <h2 class="title title-anim">portfolio Gallery</h2>
-                              <nav aria-label="breadcrumb">
-                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item">
-                                       <a href="index.html">
-                                          <i class="fa-solid fa-house"></i>
-                                          Home
-                                       </a>
-                                    </li>
-                                    <li class="breadcrumb-item active" aria-current="page">
-                                       portfolio Gallery
-                                    </li>
-                                 </ol>
-                              </nav>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-7 col-xl-5">
-                           <div class="text-center text-lg-start">
-                              <p class="primary-text">We're top-notch design agency committed to partnering
-                                 with good companies and hiring the right people for the right roles.</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </section>
-               <!-- ==== / banner end ==== -->
-               <!-- ==== portfolio start ==== -->
-               <section class="section portfolio-m fade-wrapper">
-                  <div class="container">
-                     <div class="row gaper">
-                        <div class="col-12 col-lg-6">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a
-                                    href="https://www.behance.net/gallery/162488485/Substance-Painter-%28-Texturing-%29">
-                                    <img src="assets/images/portfolio/3d-rocket.png" alt="Image">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a
-                                       href="https://www.behance.net/gallery/162488485/Substance-Painter-%28-Texturing-%29">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a
-                                       href="https://www.behance.net/gallery/162488485/Substance-Painter-%28-Texturing-%29">Robotes</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a href="service-single.html">
-                                    <img src="assets/images/portfolio/siprey.png" alt="Image">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a href="service-single.html">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a href="service-single.html">Siprey </a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-6 col-xxl-3">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a
-                                    href="https://www.behance.net/gallery/157631685/Flower-Growth-Stimulations-with-Blender-Software">
-                                    <img src="assets/images/portfolio/banner-1.png" alt="Image">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a
-                                       href="https://www.behance.net/gallery/157631685/Flower-Growth-Stimulations-with-Blender-Software">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a
-                                       href="https://www.behance.net/gallery/157631685/Flower-Growth-Stimulations-with-Blender-Software">Sci-Fi
-                                       and Futuristic 3d</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
+        </section>
+        <!-- portfolio end -->
 
-                        <div class="col-12 col-lg-6 col-xxl-3">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a href="https://www.behance.net/gallery/165681079/3d-Sony-Camera">
-                                    <img src="assets/images/portfolio/camera.png" alt="Image">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a href="https://www.behance.net/gallery/165681079/3d-Sony-Camera">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a href="https://www.behance.net/gallery/165681079/3d-Sony-Camera">3D Sony
-                                       Camera</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-6 col-xxl-3">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a href="https://www.behance.net/danishgohare/projects">
-                                    <img src="assets/images/portfolio/arc.png" alt="Image">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a href="https://www.behance.net/danishgohare/projects">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a href="https://www.behance.net/danishgohare/projects">3D Architecture</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-6 col-xxl-3">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a
-                                    href="https://www.behance.net/gallery/172333323/Sci-Fi-and-Futuristic-Industrial-Model-of-Robot">
-                                    <img src="assets/images/portfolio/Sci-Fi .png" alt="Image">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a
-                                       href="https://www.behance.net/gallery/172333323/Sci-Fi-and-Futuristic-Industrial-Model-of-Robot">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a
-                                       href="https://www.behance.net/gallery/172333323/Sci-Fi-and-Futuristic-Industrial-Model-of-Robot">Sci-Fi
-                                       and Futuristic 3d</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-6 col-xxl-3">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a
-                                    href="https://www.behance.net/buddlay">
-                                    <img src="assets/images/portfolio/watch1.png" alt="Image">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a
-                                       href="https://www.behance.net/buddlay">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a
-                                       href="https://www.behance.net/buddlay">3D Watchs</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-6 col-xxl-3">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a
-                                    href="https://www.behance.net/buddlay">
-                                    <img src="assets/images/portfolio/watch2.png" alt="Image">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a
-                                       href="https://www.behance.net/buddlay">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a
-                                       href="https://www.behance.net/buddlay">3D
-                                       Watchs</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-6 col-xxl-3">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a
-                                    href="https://www.behance.net/buddlay">
-                                    <img src="assets/images/portfolio/dumbells 3d.png" alt="Image">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a
-                                       href="https://www.behance.net/buddlay">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a
-                                       href="https://www.behance.net/buddlay">3D
-                                       Watchs</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-12 col-lg-6 col-xxl-3">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a
-                                    href="https://www.behance.net/buddlay">
-                                    <img src="assets/images/portfolio/RENDER 5.png" alt="Image" width="100%">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a
-                                       href="https://www.behance.net/buddlay">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a
-                                       href="https://www.behance.net/buddlay">3D
-                                       Watchs</a>
-                                 </h3>
-                              </div>
-                           </div>
-                        </div>
-                        
+        <!-- footer -->
+        <footer class="mil-dark-bg">
+            <img src="img/deco/map.png" alt="background" class="mil-footer-bg">
+            <div class="container">
+                <div class="mil-footer-content mil-p-120-90">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-xl-4 mil-mb-30">
 
+                            <img src="img/logo/logo-light.png" alt="" class="mil-logo mil-mb-30" style="width: 140px">
 
-                     </div>
-                     <div class="row graper">
-                        <div class="col-12 col-lg-12 col-xxl-12">
-                           <div class="portfolio-m__single topy-tilt fade-top">
-                              <div class="thumb">
-                                 <a
-                                    href="https://www.behance.net/buddlay">
-                                    <img src="assets/images/portfolio/3RD.png" alt="Image">
-                                 </a>
-                              </div>
-                              <div class="content">
-                                 <div class="tr">
-                                    <a
-                                       href="https://www.behance.net/buddlay">
-                                       <i class="icon-arrow-top-right"></i>
-                                    </a>
-                                 </div>
-                                 <h3 class="light-title-lg">
-                                    <a
-                                       href="https://www.behance.net/buddlay">3D
-                                       Watchs</a>
-                                 </h3>
-                              </div>
-                           </div>
+                            <p class="mil-light-soft mil-mb-30">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                            <a href="#." class="mil-app-btn mil-mb-5">
+                                <i class="fab fa-google-play"></i>
+                                <div class="mil-app-text">
+                                    <span class="mil-accent mil-text-sm">Available on the</span>
+                                    <div class="mil-h6">Google Play</div>
+                                </div>
+                            </a>
+
+                            <a href="#." class="mil-app-btn">
+                                <i class="fab fa-apple"></i>
+                                <div class="mil-app-text">
+                                    <span class="mil-accent mil-text-sm">Download on the</span>
+                                    <div class="mil-h6">App Store</div>
+                                </div>
+                            </a>
+
                         </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-12">
-                           <div class="section__content-cta text-center">
-                              <button class="btn btn--secondary">Load More..</button>
-                           </div>
+                        <div class="col-xl-7 mil-mt-60-adapt">
+
+                            <div class="row">
+                                <div class="col-lg-7 mil-mb-30">
+
+                                    <h3 class="mil-light mil-up-font mil-mb-30">Join The <span class="mil-accent">Voyeen.Inc</span> <br>Experience</h3>
+                                    <p class="mil-light-soft">Lorem ipsum dolor sit amet, consectetuer<br> adipiscing elit, sed diam nonummy.</p>
+
+                                </div>
+                                <div class="col-lg-5 mil-mb-30">
+
+                                    <form>
+
+                                        <input class="mil-rounded-input mil-text-center mil-mb-5" type="text" placeholder="Your email address">
+                                        <button class="mil-button mil-accent-bg mil-fw"><span>Subscribe Now</span></button>
+
+                                    </form>
+
+                                </div>
+                            </div>
+
                         </div>
-                     </div>
-                  </div>
-               </section>
-               <!-- ==== portfolio end ==== -->
-            </main>
-            <!-- ==== / main end ==== -->
-            <!-- ==== footer start ==== -->
-            <footer class="footer-two footer-cmn section ">
-               <div class="container">
-                  <div class="row gaper">
-                     <div class="col-12 col-lg-5 col-xl-4">
-                        <div class="footer-two__left">
-                           <div class="logo">
-                              <a href="index.html">
-                                 <img src="assets/images/logo.png" alt="Image" width="150px">
-                              </a>
-                           </div>
-                           <div class="paragraph">
-                              <p> Let's bring your vision to life in 3D. Get in touch</p>
-                           </div>
-                           <div class="section__content-cta">
-                              <h2>
-                                 <a href="mailto:info@yellowBees.com" class="folks-text"
-                                    style="opacity: 1%; font-size: 25px;">info@yellowBees.com</a>
-                              </h2>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-12 col-lg-7 col-xl-7 offset-xl-1 col-xxl-5 offset-xxl-3">
-                        <div class="footer-two__right">
-                           <div class="social justify-content-start justify-content-lg-start">
-                              <a href="https://www.facebook.com/profile.php?id=61554288478472" target="_blank">
-                                 <i class="fa-brands fa-facebook-f"></i>
-                                 <span>Facebook</span>
-                              </a>
-                              <a href="https://twitter.com/YellowbeesO" target="_blank">
-                                 <i class="fa-brands fa-twitter"></i>
-                                 <span>Twitter</span>
-                              </a>
-                              <a href="https://www.behance.net/Yellowbees" target="_blank">
-                                 <i class="fa-brands fa-behance"></i>
-                                 <span>Behance</span>
-                              </a>
-                              <a href="https://www.instagram.com/yellowbees_digital_services/" target="_blank">
-                                 <i class="fa-brands fa-instagram"></i>
-                                 <span>Instagram</span>
-                              </a>
-                              <a href="https://www.linkedin.com/in/yellow-bees-digital/" target="_blank">
-                                 <i class="fa-light fa-linkedin"></i>
-                                 <span>Linkedin</span>
-                              </a>
-                           </div>
-                           <div class="footer__single-meta section__content-cta">
-                              <a href="https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&amp;hl=en_US&amp;ll=18.672105000000013%2C105.68673800000003&amp;z=17"
-                                 target="_blank">
-                                 <i class="fa-sharp fa-solid fa-location-dot"></i>
-                                 901 N Pitt Str., Suite 170
-                                 Alexandria, USA
-                              </a>
-                              <a href="https://wa.me/+923439759711">
-                                 <i class="fa-sharp fa-solid fa-phone-volume"></i>
-                                 +923439759711
-                              </a>
-                              <a href="mailto:info@yellowBees.com">
-                                 <i class="fa-sharp fa-solid fa-envelope"></i>
-                                 info@yellowBees.com
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="footer__copyright">
-                  <div class="container">
-                     <div class="row align-items-center gaper">
-                        <div class="col-12 col-xl-6">
-                           <div class="footer__copyright-text text-center text-xl-start">
-                              <p>
-                                 Copyright &copy;
-                                 <span id="copyYear"></span>
-                                 yellowBees . All Rights Reserved
-                              </p>
-                           </div>
-                        </div>
-                        <!-- <div class="col-12 col-xl-6">
-                   <ul class="justify-content-center justify-content-xl-end">
-                       <li>
-                           <a href="index.html">Home</a>
-                       </li>
-                       <li>
-                           <a href="about-us.html">About</a>
-                       </li>
-                       <li>
-                           <a href="our-services.html">Services</a>
-                       </li>
-                       <li>
-                           <a href="blog.html">Blog</a>
-                       </li>
-                       <li>
-                           <a href="contact-us.html">Contact</a>
-                       </li>
-                   </ul>
-               </div> -->
-                     </div>
-                  </div>
-               </div>
-            </footer>
-            <!-- ==== / footer end ==== -->
-         </div>
-      </div>
-      <!-- ==== scroll to top start ==== -->
-      <button class="progress-wrap" aria-label="scroll indicator" title="go to top">
-         <span></span>
-         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-         </svg>
-      </button>
-      <!-- ==== / scroll to top end ==== -->
-   </div>
-   <!-- ==== js dependencies start ==== -->
-   <!-- jquery -->
-   <script src="assets/vendor/jquery/jquery-3.7.0.min.js"></script>
-   <!-- bootstrap five js -->
-   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-   <!-- nice select js -->
-   <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
-   <!-- magnific popup js -->
-   <script src="assets/vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
-   <!-- slick js -->
-   <script src="assets/vendor/slick/js/slick.min.js"></script>
-   <!-- image loaded js -->
-   <script src="assets/vendor/images-loaded/imagesloaded.pkgd.min.js"></script>
-   <!-- isotope js -->
-   <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
-   <!-- chroma js -->
-   <script src="assets/vendor/gsap/chroma.min.js"></script>
-   <!-- splittext js -->
-   <script src="assets/vendor/gsap/SplitText.min.js"></script>
-   <!-- scrollsmoother js -->
-   <script src="assets/vendor/gsap/ScrollSmoother.min.js"></script>
-   <!-- scrollto js -->
-   <script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script>
-   <!-- scrolltrigger js -->
-   <script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
-   <!-- gsap js -->
-   <script src="assets/vendor/gsap/gsap.min.js"></script>
-   <!-- vanilla tilt js -->
-   <script src="assets/vendor/vanilla-tilt/tilt.jquery.js"></script>
-   <!-- ==== / js dependencies end ==== -->
-   <!-- plugins js -->
-   <script src="assets/js/plugins.js"></script>
-   <!-- main js -->
-   <script src="assets/js/main.js"></script>
+                    </div>
+                </div>
+                <div class="mil-divider mil-light"></div>
+
+                <div class="mil-footer-links">
+                    <ul class="mil-social mil-light">
+                        <li class="mil-adapt-links"><a href="https://facebook.com/Voyeen_Inc" target="_blank">Facebook</a><a href="#.">FB</a></li>
+                        <li class="mil-adapt-links"><a href="https://www.instagram.com/voyeen.inc/" target="_blank">Instagram</a><a href="#.">IG</a></li>
+                        <li class="mil-adapt-links"><a href="https://www.linkedin.com/company/voyeen-incorporated/" target="_blank">LinkedIn</a><a href="#.">IN</a></li>
+                        <li class="mil-adapt-links"><a href="https://twitter.com/Voyeen_Inc" target="_blank">Twitter</a><a href="#.">TW</a></li>
+                        <li class="mil-adapt-links"><a href="https://youtube.com/Voyeen_Inc" target="_blank">YouTube</a><a href="#.">YT</a></li>
+                    </ul>
+                    <ul class="mil-additional-links mil-light">
+                        <li><a href="#.">Terms & Condition</a></li>
+                        <li><a href="#.">Privacy Policy</a></li>
+                        <li><a href="#.">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mil-footer-bottom">
+                <div class="container">
+                    <p class="mil-text-sm mil-light">© Voyeen.Inc 2023.</p>
+                    <p class="mil-text-sm mil-light">All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- wrapper end -->
+
+    <!-- jQuery js -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- itsulu js -->
+    <script src="js/main.js"></script>
+
 </body>
-
-
-<!-- Mirrored from www.gramentheme.com/html/xpovio/ltr/portfolio.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Dec 2023 11:43:51 GMT -->
 
 </html>
